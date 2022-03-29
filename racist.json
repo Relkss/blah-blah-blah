@@ -355,8 +355,8 @@
 			"Harry Potter"
 		]
     	},
-	"memes": {
-		"name": "Popular games (Unfinished)",
+	"popular_games": {
+		"name": "Popular games",
 		"words": [
 			"Dying Light 2",
 			"Among Us",
@@ -372,6 +372,27 @@
 			"Fortnite",
 			"PUBG",
 			"Free Fire"
+		]
+	},
+	"fruits": {
+		"name": "Fruits",
+		"words": [
+			"Apple",
+			"Apricot",
+			"Avocado",
+			"Banana",
+			"Cherry",
+			"Coconut",
+			"Custard apple",
+			"Figs",
+			"Grapes",
+			"Kiwi fruit",
+			"Orange",
+			"Papaya",
+			"Pineapple",
+			"Mulberry",
+			"Star fruit",
+			"Watermelon"
 		]
 	}
 }
