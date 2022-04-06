@@ -29,8 +29,8 @@ local AutoFarmTab = Window:AddTab('AutoFarm');
 
 local function JeezStopBeingANoLife()
    _G.AutoOMEGARebirth = true 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Relkss/Testing_Exploit/main/Auto%20OMEGA%20Rebirth%20%232"))()
-end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Relkss/Testing_Exploit/main/Auto%20OMEGA%20Rebirth%20%232"))();
+end;
 
 local AutoFarmTabBox1 = AutoFarmTab:AddLeftTabbox('sheesh');
 local XD = AutoFarmTabBox1:AddTab('Auto Give Omega Rebirth');
