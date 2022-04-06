@@ -19,18 +19,29 @@ local function AdminSucks()
    local Event = game:GetService("ReplicatedStorage").OwSw;
    Event:FireServer(A1);
 end;
+local function BESTWEAPONWOWW()
+local args = {
+    [1] = "BestSwordEver";
+    [2] = "OmegaRebirths";
+    [3] = 0;
+    [4] = "Unlock";
+};
+
+game:GetService("ReplicatedStorage").ItemGiveWeapon:FireServer(unpack(args));
+end;
 
 local GetItemsTab = Window:AddTab('Giver');
 local GetitemsTabBox1 = GetItemsTab:AddLeftTabbox('Item Giver');
 local Hi = GetitemsTabBox1:AddTab([[Item's]]);
 Hi:AddButton('Get Admin Weapon', AdminSucks)
+Hi:AddButton('Get the 60k omega rebirth weapon', BESTWEAPONWOWW)
 
 local AutoFarmTab = Window:AddTab('AutoFarm');
 
 local function JeezStopBeingANoLife()
    _G.AutoOMEGARebirth = true 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Relkss/Testing_Exploit/main/Auto%20OMEGA%20Rebirth%20%232"))();
-end;
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Relkss/Testing_Exploit/main/Auto%20OMEGA%20Rebirth%20%232"))()
+end
 
 local AutoFarmTabBox1 = AutoFarmTab:AddLeftTabbox('sheesh');
 local XD = AutoFarmTabBox1:AddTab('Auto Give Omega Rebirth');
