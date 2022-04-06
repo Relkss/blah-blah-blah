@@ -30,11 +30,47 @@ local args = {
 game:GetService("ReplicatedStorage").ItemGiveWeapon:FireServer(unpack(args));
 end;
 
+local function Necro()
+local args = {
+    [1] = "Necromancer";
+};
+
+game:GetService("ReplicatedStorage").ItemGiveCollect:FireServer(unpack(args));
+end;
+
+local function Heal()
+local args = {
+    [1] = "HealGun";
+};
+
+game:GetService("ReplicatedStorage").ItemGiveCollect:FireServer(unpack(args));
+end;
+
+local function B()
+local args = {
+    [1] = "FartGun";
+};
+
+game:GetService("ReplicatedStorage").ItemGiveCollect:FireServer(unpack(args));
+end;
+
+local function A()
+local args = {
+    [1] = "Death";
+};
+
+game:GetService("ReplicatedStorage").ItemGiveCollect:FireServer(unpack(args));
+end;
+
 local GetItemsTab = Window:AddTab('Giver');
 local GetitemsTabBox1 = GetItemsTab:AddLeftTabbox('Item Giver');
 local Hi = GetitemsTabBox1:AddTab([[Item's]]);
 Hi:AddButton('Get Admin Weapon', AdminSucks)
 Hi:AddButton('Get the 60k omega rebirth weapon', BESTWEAPONWOWW)
+Hi:AddButton('Get Necro', Necro)
+Hi:AddButton('Get Heal Gun', Heal)
+Hi:AddButton('Get Fard Gun', B)
+Hi:AddButton('Get Edgy Scythe', A)
 
 local AutoFarmTab = Window:AddTab('AutoFarm');
 
@@ -127,7 +163,6 @@ Options.OutlineColor:OnChanged(UpdateTheme);
 Options.FontColor:OnChanged(UpdateTheme);
 
 Library:Notify('Loaded UI!');
-
 
 
 
