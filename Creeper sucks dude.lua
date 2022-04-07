@@ -163,6 +163,7 @@ Options.OutlineColor:OnChanged(UpdateTheme);
 Options.FontColor:OnChanged(UpdateTheme);
 
 Library:Notify('Loaded UI!');
+Library:Notify('Press Right Shift To Open The GUI!');
 
 
 
