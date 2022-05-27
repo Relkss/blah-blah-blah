@@ -1,0 +1,43 @@
+local repo = 'https://raw.githubusercontent.com/wally-rblx/LinoriaLib/main/'
+
+local Library = loadstring(game:HttpGet(repo .. 'Library.lua'))()
+local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
+
+local Window = Library:CreateWindow({
+    Title = 'Goofy ahh raise a troll script | Cheerios#0447',
+    Center = true,
+    AutoShow = true,
+})
+
+
+local MainTab = Window:AddTab('Imagine Grinding On A Dead Game')
+
+BoringBox = MainTab:AddLeftGroupbox('Ez Cash')
+
+BoringBox:AddInput('MoneyRentMultiply', {
+    Default = '0',
+    Numeric = true,
+    Finished = true,
+    
+    Text = 'POV: NO MAIDES?',
+    Tooltip = 'DO NOT PUT TOO MUCH NUMBER AND DONT SPAM OR ELSE THE CASH WILL GO NEGATIVE',
+    
+    Placeholder = 'screw this game',
+    MaxLength = 3, -- 3 digits
+})
+local among = Options.MoneyRentMultiply.Value
+Options.MoneyRentMultiply:OnChanged(function()
+    Library:Notify('dont spam it or else cash will go negative!')
+    for i=1, among do
+        game:GetService("ReplicatedStorage").RaiseRent:FireServer()
+    end
+    game:GetService("ReplicatedStorage").GetRent:FireServer()
+end)
+
+SaveManager:SetLibrary(Library)
+
+
+SaveManager:IgnoreThemeSettings() 
+
+
+SaveManager:LoadAutoloadConfig()
